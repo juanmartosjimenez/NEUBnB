@@ -1,7 +1,7 @@
 {
   "name": "untitled",
   "version": "0.1.0",
-  "homepage": "https://juanmartosjimenez.github.io",
+  "homepage": "https://juanmartosjimenez.github.io/NEUBnB/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
