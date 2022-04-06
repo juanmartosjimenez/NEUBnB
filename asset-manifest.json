@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/NEUBnB/static/css/main.38be36b0.css",
-    "main.js": "/NEUBnB/static/js/main.77a7fa4d.js",
+    "main.js": "/NEUBnB/static/js/main.4a2bf120.js",
     "static/js/787.cd7d7d7f.chunk.js": "/NEUBnB/static/js/787.cd7d7d7f.chunk.js",
     "static/media/logo.svg": "/NEUBnB/static/media/logo.59e64d281d5ade376fb0d77ce0bdde83.svg",
     "index.html": "/NEUBnB/index.html",
     "main.38be36b0.css.map": "/NEUBnB/static/css/main.38be36b0.css.map",
-    "main.77a7fa4d.js.map": "/NEUBnB/static/js/main.77a7fa4d.js.map",
+    "main.4a2bf120.js.map": "/NEUBnB/static/js/main.4a2bf120.js.map",
     "787.cd7d7d7f.chunk.js.map": "/NEUBnB/static/js/787.cd7d7d7f.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.38be36b0.css",
-    "static/js/main.77a7fa4d.js"
+    "static/js/main.4a2bf120.js"
   ]
 }
