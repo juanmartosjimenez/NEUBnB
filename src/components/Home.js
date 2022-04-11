@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import {Button, Card, Form} from "react-bootstrap";
 
 function Home() {
+
     let navigate = useNavigate();
     const clientRoute = () =>{
         let path = `/client`;
@@ -12,6 +13,7 @@ function Home() {
         let path = `/host`;
         navigate(path);
     }
+
     return (
 
         <div>

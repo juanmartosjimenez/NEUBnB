@@ -17,7 +17,7 @@ function createBedsDropdowns(list){
         out.push(<FloatingLabel
             controlId="floatingInput"
             label={elem}
-            className="mb-3"><Form.Control type="number" placeholder="0" value="0" /></FloatingLabel>)});
+            className="mb-3"><Form.Control type="number" placeholder="0"  /></FloatingLabel>)});
     console.log(out)
     return out;
 }

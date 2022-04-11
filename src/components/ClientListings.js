@@ -2,7 +2,7 @@ import React from 'react';
 import {Button, Card, Col, ListGroup, ListGroupItem, Row} from "react-bootstrap";
 import {useNavigate} from "react-router-dom";
 
-function genListingList(listings, listingRoute){
+function genListingList(listings,reservationRoute){
     let out = [];
     listings.forEach((elem)=>{
         out.push(<ListGroupItem>
@@ -23,10 +23,7 @@ function genListingList(listings, listingRoute){
                         </Col>
                         <Col>
                             <Row>
-                                <Button type={"submit"} className={"mb-3"} onClick={listingRoute}>Edit Listing</Button>
-                            </Row>
-                            <Row>
-                                <Button type={"submit"} className={"mb-3"} variant={"danger"}>Delete Listing</Button>
+                                <Button type={"submit"} className={"mb-3"} variant={"primary"} onClick={reservationRoute}>Book Listing</Button>
                             </Row>
                         </Col>
 
@@ -39,21 +36,21 @@ function genListingList(listings, listingRoute){
     return out;
 }
 
-function Listing() {
+function ClientListing() {
     let sampleListings= [{"listingName":"Boston Bed and Breakfast", "listingPrice": 200, "listingLocation": {"address1": "Huntington Ave", "address2": "Apartment 1", "city": "Boston", "state": "MA","zipcode": "02120"}, "amenities": ["washing machine", "hot tub"], "bedrooms": [{"quantity":2,"type":"queen"}, {"quantity": 1, "type": "king"}]}, {"listingName":"Dreams Delight", "listingPrice": 300, "listingLocation": {"address1": "Cedar Ave", "address2": "Apartment 104", "city": "Billerica", "state": "MA","zipcode": "02119"}, "amenities": ["washing machine", "wifi"], "bedrooms": [{"quantity":2,"type":"single"}, {"quantity": 3, "type": "bunk"}]}]
     let navigate = useNavigate();
-    const editListingRoute = () =>{
-        let path = `/new_listings`;
+    const newReservationRoute= () =>{
+        let path = `/new_reservation`;
         navigate(path);
     }
     return (
         <div>
             <Card className="text-center m-2">
-                <Card.Header>Welcome Host!</Card.Header>
+                <Card.Header>Welcome Client!</Card.Header>
                 <Card.Body>
-                <Card.Title>Below are your posted listings.</Card.Title>
+                <Card.Title>Below are the available listings.</Card.Title>
                     <ListGroup>
-                        {genListingList(sampleListings, editListingRoute)}
+                        {genListingList(sampleListings,newReservationRoute)}
                     </ListGroup>
                 </Card.Body>
 
@@ -62,4 +59,4 @@ function Listing() {
     );
 }
 
-export default Listing;
+export default ClientListing;
